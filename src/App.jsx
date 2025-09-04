@@ -5,6 +5,7 @@ import Contacts from './components/Contacts';
 import Form from './components/Form';
 import ContactItem from './components/ContactItem';
 import Dashboard from './components/dashboard';
+import Putt from './components/Put';
 
 const MyContext = createContext()
 
@@ -68,7 +69,7 @@ function App() {
             <Route path="/form" element={<Form/>}/>
             <Route path="/contacts/:id" element={<ContactItem/>}/>
             <Route path="/" element={<Dashboard/>}/>
-            <Route path="/delete/:id" element={<Dashboard/>}/>
+            <Route path="/put/:id" element={<Putt/>}/>
             <Route path="/delete" element={<Dashboard/>}/>
 
         </Routes>
